@@ -1,0 +1,26 @@
+class system {
+
+ public:
+
+  std::vector<Body> solar_system;
+  std::vector<Body> old_system;
+
+  void evolve(double dt){
+    old_system = solar_sytem;
+
+    for(i=0;i<8;i++){
+      for(j=0;i<8;j++){
+	mass1=old_sytem[i].getmass();
+	mass2=old_sytem[j].getmass();
+	x_diff=old_sytem[i].getx()-old_system[j].getx();
+	y_diff=old_sytem[i].gety()-old_system[j].gety();
+	theta=arctan(x_diff/y_diff);
+	force=G*mass1*mass2/(x_diff*x_diff+y_diff*y_diff);
+	ax=ax+cos(theta)*force/mass1;
+	ay=ay+sin(theta)*force/mass1;
+      }
+      solar_sytem.evolve(dt,ax,ay);
+    
+  }
+  
+}

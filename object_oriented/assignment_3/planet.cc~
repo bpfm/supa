@@ -1,0 +1,29 @@
+class planet {
+  
+  private:
+  std::string name;
+  double mass,distance;
+  public:
+  std::string getname(){
+    return name;
+  }
+  bool setname(std::string planetname){
+    name=planetname;
+    return true;
+  }
+  double getmass(){
+    return mass;
+  }
+  bool setmass(double planetmass){
+    mass=planetmass;
+    return true;
+  }
+  double getdistance(){
+    return distance;
+  }
+  bool setdistance(double planetdistance){
+    distance=planetdistance;
+    return distance;
+  }
+
+};

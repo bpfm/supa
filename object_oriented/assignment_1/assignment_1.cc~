@@ -1,0 +1,18 @@
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
+
+int main(){
+  flaot x,y;
+  int line=0;
+  
+  std::ifstream two_d_float_in;
+  std::ifstream two_d_float_out;
+
+  two_d_float_in.open("input2D_float.txt");
+  
+
+  
+
+  
+}
