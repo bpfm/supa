@@ -12,7 +12,6 @@ class system {
   std::vector<body> solar_system;
   std::vector<body> old_system;
 
-  std::string name;
   int i,j;
   double ax,ay,mass2,x_diff,y_diff,G;
   
